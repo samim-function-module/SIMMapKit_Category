@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0BDBF9A675ABE845425F7D3F /* Pods-SIMMapKit_Category_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMMapKit_Category_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SIMMapKit_Category_Tests/Pods-SIMMapKit_Category_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A987EA112C961FBF79665E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1A987EA112C961FBF79665E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		285136D55D8F1B391DAFBCBA /* Pods-SIMMapKit_Category_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMMapKit_Category_Example.debug.xcconfig"; path = "Target Support Files/Pods-SIMMapKit_Category_Example/Pods-SIMMapKit_Category_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		48F75458E667BC1F6951B490 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		48F75458E667BC1F6951B490 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4AA06570AB6CE536A71B01A0 /* Pods_SIMMapKit_Category_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIMMapKit_Category_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE37E245CF9C7A509961DDB /* Pods-SIMMapKit_Category_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMMapKit_Category_Tests.release.xcconfig"; path = "Target Support Files/Pods-SIMMapKit_Category_Tests/Pods-SIMMapKit_Category_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SIMMapKit_Category_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIMMapKit_Category_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8375F91489A4DF1181971A71 /* Pods_SIMMapKit_Category_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIMMapKit_Category_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B97EC19A65ABF870E29AF432 /* SIMMapKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SIMMapKit_Category.podspec; path = ../SIMMapKit_Category.podspec; sourceTree = "<group>"; };
+		B97EC19A65ABF870E29AF432 /* SIMMapKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SIMMapKit_Category.podspec; path = ../SIMMapKit_Category.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F654C4076EB2781D73131B7A /* Pods-SIMMapKit_Category_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMMapKit_Category_Example.release.xcconfig"; path = "Target Support Files/Pods-SIMMapKit_Category_Example/Pods-SIMMapKit_Category_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				0BDBF9A675ABE845425F7D3F /* Pods-SIMMapKit_Category_Tests.debug.xcconfig */,
 				4FE37E245CF9C7A509961DDB /* Pods-SIMMapKit_Category_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ZacharyIcoder;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = HP8U3K66H6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -346,10 +348,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SIMMapKit_Category_Example/Pods-SIMMapKit_Category_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/SIMMapKit_Category/SIMMapKit_Category.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SIMMapKit_Category.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +498,7 @@
 			baseConfigurationReference = 285136D55D8F1B391DAFBCBA /* Pods-SIMMapKit_Category_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HP8U3K66H6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SIMMapKit_Category/SIMMapKit_Category-Prefix.pch";
 				INFOPLIST_FILE = "SIMMapKit_Category/SIMMapKit_Category-Info.plist";
@@ -509,6 +514,7 @@
 			baseConfigurationReference = F654C4076EB2781D73131B7A /* Pods-SIMMapKit_Category_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HP8U3K66H6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SIMMapKit_Category/SIMMapKit_Category-Prefix.pch";
 				INFOPLIST_FILE = "SIMMapKit_Category/SIMMapKit_Category-Info.plist";

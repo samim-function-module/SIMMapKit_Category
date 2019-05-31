@@ -1,0 +1,6 @@
+framework module SIMMapKit_Category {
+  umbrella header "SIMMapKit_Category-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,3 +1,7 @@
+
+source 'https://github.com/samim-function-module/SIMSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 platform :ios, '8.0'

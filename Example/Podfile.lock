@@ -1,0 +1,23 @@
+PODS:
+  - CTMediator (25)
+  - SIMMapKit_Category (0.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - SIMMapKit_Category (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  SIMMapKit_Category:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  SIMMapKit_Category: 3d95e836096eb47d91ec42e939159c38bcd40db7
+
+PODFILE CHECKSUM: de09c1419e2241eb6209b26365966f307191dc37
+
+COCOAPODS: 1.7.1

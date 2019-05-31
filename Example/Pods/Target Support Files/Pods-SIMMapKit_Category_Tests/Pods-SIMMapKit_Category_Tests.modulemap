@@ -1,0 +1,6 @@
+framework module Pods_SIMMapKit_Category_Tests {
+  umbrella header "Pods-SIMMapKit_Category_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
